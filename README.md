@@ -165,6 +165,3 @@ Restarting the backend clears all posts.
 👨‍💻 Author
 
 Shubham Singh
-
-GitHub:
-https://github.com/yourusername
