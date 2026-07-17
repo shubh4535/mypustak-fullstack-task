@@ -2,12 +2,15 @@ import { useState, useEffect } from "react";
 
 function App() {
 
+  const API_URL =
+  "https://mypustak-backend-hzbu.onrender.com";
+
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(false);
   const createPost  = async () => {
-  const response = await fetch("http://127.0.0.1:8000/posts", {
+  const response = await fetch(`${API_URL}/posts`, {
       method: "POST",
       headers: {
         "Content-Type":"application/json"
@@ -28,7 +31,7 @@ const fetchPosts = async () => {
   try {
     setLoading(true);
 
-    const response = await fetch("http://127.0.0.1:8000/posts");
+    const response = await fetch(`${API_URL}/posts`);
 
     const data = await response.json();
 
@@ -42,7 +45,7 @@ const fetchPosts = async () => {
 };
 
 const deletePost = async (id) => {
-  await fetch(`http://127.0.0.1:8000/posts/${id}`, {
+  await fetch(`${API_URL}/posts/${id}`, {
     method: "DELETE",
   });
 

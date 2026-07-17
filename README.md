@@ -165,3 +165,11 @@ Restarting the backend clears all posts.
 👨‍💻 Author
 
 Shubham Singh
+
+## Live Demo
+
+Frontend:
+https://mypustak-fullstack-task-dsvcauz95.vercel.app
+
+Backend:
+https://mypustak-backend-hzbu.onrender.com
