@@ -7,7 +7,7 @@ app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:5173",
-                   "https://mypustak-fullstack-task-dsvcauz95.vercel.app"],
+                   "mypustak-fullstack-task.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
